@@ -89,3 +89,34 @@ If you'd like to contribute to this repository by adding more notebooks, improvi
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md).
+
+
+## Setups
+
+- Install JDK because PySpark is built on top of Java 8, 11, or 17. Java version: 17.0.12
+- Install Apache Spark. Spark version: 3.5.0
+- Install/check Python. Spark runs on Python 3.7+. Python version: 3.9.6
+
+Create a virtual environment:
+
+```bash
+python -m venv .pyspark-venv
+source .pyspark-venv/bin/activate
+```
+
+- install pyspark, findspark and jupyterlab in the virtual environment
+
+```bash
+pip install pyspark
+pip install findspark
+pip install jupyterlab
+```
+
+- launch jupyter lab and use pyspark
+
+```bash
+jupyter lab
+```
+
+
+
